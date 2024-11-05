@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .interface{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  footer{
+    background-color: #000000;
+    color: #ffff;
+    padding: 40px;
+  }
+
+  .line-footer1 h2{
+    font-size: 2.5rem;
+  }
+
+  .line-footer1 p{
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+  }
+
+  .line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line-footer1 form input[type=email]{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid ;
+    color: #ffff;
+    padding: 10px;
+    outline: 0;
+  }
+  
+  .line-footer1 form input[type=submit]{
+    width: 80px;
+    height: 40px;
+    background-color: #FF2500;
+    border: 0;
+    color: #ffff;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .line-footer1 form input[type=submit] :hover{
+    background-color: #ffff;
+    color: #FF2500;
+  }
+
+  footer .line-footer1{
+    text-align: center;
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 20px;
+  }
+
+
+  footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .line-footer2 .box-line-footer{
+    width: calc(100% / 5);
+  }
+  footer .box-line-footer img{
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .line-footer2 .box-line-footer h3{
+    color: #FF2500;
+    margin-bottom: 10px;
+  }
+  .line-footer2 .box-line-footer a{
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size:  .8rem;
+  }

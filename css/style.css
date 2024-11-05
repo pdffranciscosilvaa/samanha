@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Titillium Web',sans-serif;
 }
 
 .container{
@@ -87,69 +86,9 @@ header{
 
 
 body{
-  background-color: #e6dddc;
+  background-color: #585858;
   height: 100vh;
 }
-
-nav.menu-lateral{
-  width: 90px;
-  height: 100%;
-  background-color: #202020;
-  padding: 40px 0 40px 1%;
-  box-shadow: 3px 0 0 #FF2500;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  transition: .2s;
-}
-
-nav.menu-lateral:hover{
-  width: 300px;
-}
-
-.btn-expandir{
-  width: 100%;
-  padding-left: 10px;
-}
-
-.btn-expandir > i{
-  color: #ffffff;
-  font-size: 24px;
-  cursor: pointer;
-}
-
- ul{
-  height: 100%;
-  list-style-type: none;
- }
-
- ul li.item-menu{
-  transition: .2s;
- }
-
-ul li.item-menu:hover{
-  background: #FF2500;
-}
- ul li.item-menu a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 20px 4%;
-  display: flex;
-  margin-bottom: 20px;
-  line-height: 40px;
- }
-
- ul li.item-menu a .txt-link{
-  margin-left: 40px;
- }
-
- ul li.item-menu a .icon > i{
-  font-size: 30px;
-  margin-left: 10px;
- }
 
  html{
   scroll-behavior: smooth;
