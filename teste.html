@@ -1,0 +1,152 @@
+<div class="container">  
+    <div class="card">  
+        <h2>Bubble Sort</h2>  
+        <p>Bubble Sort é um algoritmo de ordenação simples que compara pares de elementos adjacentes em uma lista e os troca se estiverem na ordem errada, repetindo esse processo até que toda a lista esteja ordenada.</p>  
+        <button id="testarbs">Testar</button>
+        <button id="mostrarbs">Código</button>
+        <pre id="bs" style="display: none;">
+
+testar.addEventListener('click', ()=>{
+    randomArray()
+    const n = arr.length;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+            }
+        }
+    }
+})
+        </pre>
+        <div id="resbs"></div>
+    </div>  
+    <div class="card">  
+        <h2>Insertion Sort</h2>  
+        <p>Insertion Sort é um algoritmo de ordenação que constrói uma lista ordenada, inserindo elementos um por uma posição correta em relação aos já ordenados, ideal para listas pequenas ou quase ordenadas.</p>  
+        <button id="testaris">Testar</button>
+        <button id="mostraris">Código</button>
+        <pre id="is" style="display: none;">
+
+document.getElementById('testaris').addEventListener('click', ()=>{
+    randomArray()
+    for (let i = 1; i < arr.length; i++) {
+        let key = arr[i];
+        let j = i - 1;
+
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+})
+        </pre>
+        <div id="resis"></div>
+    </div>  
+    <div class="card">  
+        <h2>Selection Sort</h2>  
+        <p>Selection Sort é um algoritmo de ordenação que divide a lista em duas partes: uma ordenada e outra desordenada. Ele repetidamente seleciona o menor (ou maior) elemento da parte desordenada e o move para o final da parte ordenada, até que a lista esteja ordenada.</p>  
+        <button id="testarss">Testar</button>
+            <button id="mostrarss">Código</button>
+            <pre id="ss" style="display: none;">
+
+    document.getElementById('testarss').addEventListener('click', ()=>{
+        randomArray()
+        const n = arr.length;
+        for (let i = 0; i < n - 1; i++) {
+            let minIndex = i;
+            for (let j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            if (minIndex !== i) {
+                [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+            }
+        }
+    })
+            </pre>
+            <div id="resss"></div>
+    </div>  
+    <div class="card">  
+        <h2>Fibonacci</h2>  
+        <p>A sequência de Fibonacci é uma série numérica em que cada número é a soma dos dois anteriores, começando com 0 e 1.</p>  
+        <button id="testarfb">Testar</button>
+            <button id="mostrarfb">Código</button>
+            <br>
+            <pre id="fb" style="display: none;">
+
+    document.getElementById('testarfb').addEventListener('click', ()=>{
+        let n = 10
+        const fib = [0, 1]; 
+        for (let i = 2; i < n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+        }
+        fib.slice(0, n);                   
+    })
+            </pre>
+            <br>
+            <div id="resfb"></div>   
+    </div>  
+    <div class="card">  
+        <h2>Programação com criação de elementos dinâmicos</h2>  
+        <p>(createElement e appendChild)</p>  
+        <button id="testarss">Testar</button>
+        <button id="mostrarss">Código</button>
+        <pre id="ss" style="display: none;">
+
+          // Criar um novo parágrafo  
+          let novoParagrafo = document.createElement("p");  
+          novoParagrafo.textContent = "Este é um parágrafo criado dinamicamente.";  
+          
+          // Adicionar o parágrafo ao corpo do documento  
+          document.body.appendChild(novoParagrafo);
+        </pre>
+        <div id="resss"></div> 
+    </div>  
+    <div class="card">  
+        <h2>Usando laço for</h2>  
+        <button id="testarss">Testar</button>
+        <button id="mostrarss">Código</button>
+        <pre id="ss" style="display: none;">
+
+          for (let i = 0; i < 5; i++) {  
+            console.log("Iteração número: " + i);  
+        }
+        </pre>
+        <div id="resss"></div> 
+    </div>  
+    <div class="card">  
+        <h2>Usando laço While</h2>  
+        <button id="testarss">Testar</button>
+      <button id="mostrarss">Código</button>
+      <pre id="ss" style="display: none;">
+        //usando laço while
+        let contador = 0;  
+        while (contador < 5) {  
+        console.log("Contador: " + contador);  
+        contador++;  
+    }
+      </pre>
+      <div id="resss"></div> 
+    </div>  
+    <div class="card">  
+        <h2>Usando laço If, Else e If-Else</h2>  
+        <button id="testarss">Testar</button>
+        <button id="mostrarss">Código</button>
+        <pre id="ss" style="display: none;">
+          let nota = 85;  
+    
+          if (nota >= 90) {  
+              console.log("Nota A");  
+          } else if (nota >= 80) {  
+              console.log("Nota B");  
+          } else if (nota >= 70) {  
+              console.log("Nota C");  
+          } else {  
+              console.log("Nota D ou F");  
+          }
+        </pre>
+        <div id="resss"></div>
+    </div>  
+</div>  

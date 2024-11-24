@@ -13,10 +13,39 @@
    <header>
     <div class="container">
     <div class="logo">
-      <img src="css/chico.png" >
+      <img src="css/I.png" >
     </div><!--logo-->
     <div class="menu">
-      <nav>
+      <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+
+
+
+
+
+
+
+
+      <div class="menu-lateral" id="menuLateral">
+        <br>
+        <br>
+        <br>
+        <a href="index.html">Sobre Nós</a>
+        <a href="bdd.html">Banco de Dados</a>
+        <a href="eletrotecnica.html">Eletroeletrônica</a>
+        <a href="redes.html">Redes</a>
+        <a href="programacao.html">Programação</a>
+        <a href="algoritmos.html">Algoritmos e Fluxogramas</a>
+    </div>
+
+
+
+
+
+
+
+
+
+      <!-- <nav>
         <a href="empresa.html">Sobre a Empresa</a>
         <a href="clientes.html">Clientes</a>
         <a href="redes.html">Redes</a>
@@ -24,7 +53,9 @@
         <a href="bdd.html">Banco de Dados</a>
         <a href="algoritmosefluxogramas.html">Algoritmos e Fluxogramas</a>
         <a href="programacao.html">Programação</a>
-        </nav>
+        </nav> -->
+
+
     </div>
     <div class="sociais">
       <button>   
@@ -93,22 +124,75 @@
       <!-- Página home -->
       <section id="home">
         <div class="banco_de_dados">  
-            <h3>Banco de Dados</h3>  
+          <div class="pag">
+            <h1>Banco de Dados</h1>  
             <p>  
-                "O coração das informações em qualquer negócio! Nossos serviços incluem treinamentos para que sua equipe aprenda a organizar e acessar dados de forma eficiente, consultorias para otimizar suas bases de dados e avaliações de risco que garantam a proteção dos dados sensíveis da sua empresa contra ameaças externas, como hackers e violações de segurança."  
-            </p>  
-            <ul>  
-                <li>  
-                    "Desenvolvimento de Software Personalizado"  
-                </li>  
-                <li>  
-                    "Consultoria em Tecnologia da Informação"  
-                </li>  
-                <li>  
-                    "Gestão de Projetos"  
-                </li>  
+              Um banco de dados é uma coleção organizada de informações estruturadas, geralmente armazenadas eletronicamente em um sistema de computador. Ele permite o armazenamento e a organização de dados para facilitar o gerenciamento e o acesso a essas informações.    </p>  <br><br>
+            </div>
+            <div class="pag">
+                <h2>Banco de Dados - Relacional</h2><br>
+                <p>Um banco de dados relacional é um tipo de sistema que organiza e armazena dados em tabelas com uma estrutura pré-definida, permitindo o acesso a pontos de dados relacionados entre si. Esses bancos utilizam um modelo formal que define as relações entre os dados, o que facilita consultas rápidas e eficientes.</p><br>
+                <div>
+                   <img src="css/realcional.png" alt="Banco de Dados - Relacional" width="400px">
+                   <h2>Banco de Dados- Relacional</h2>
+                  </div>
+                <br><br>
             </ul>  
-        </div>
+            <ul>
+            </div>
+            <div class="pag">
+              <h3>Banco de Dados - Não Relacional</h3><br>
+              <p>banco de dados que não utiliza a estrutura tradicional de tabelas compostas por linhas e colunas, característica dos sistemas de banco de dados relacionais. Em vez disso, esses bancos de dados podem armazenar dados em formatos como documentos, chave-valor, grafos ou colunas. O termo "NoSQL" é frequentemente associado a essas tecnologias, que são projetadas para lidar com grandes volumes de dados não estruturados ou semi-estruturados.</p><br><br>
+              <div>
+                <img src="css/nao-relacional.webp" alt="" width="400px">
+                  <h2>Banco de Dados - Não Relacional</h2>
+                </div>
+              </div>
+            </ul>
+            <ul>
+            </div>
+              <br><br><br>
+              <div class="pag">
+              <h3>O que é um Diagrama DER?</h3><br>
+              <p>Um diagrama DER (Diagrama de Entidade e Relacionamento) é uma representação gráfica que ilustra as entidades de um sistema e as relações entre elas. Ele é fundamental para modelar bancos de dados, ajudando a identificar como as informações estão interconectadas e como os dados fluem dentro do sistema.</p><br>
+              <div>
+                <img src="css/04.png" alt="" width="400px">
+                  <h2>Diagrama DER</h2>
+              </div>
+            </ul>
+            <ul>
+            </div>
+              <br><br>
+              <div class="pag">
+              <h3>O que é um Diagrama MER?</h3><br>
+              <p>O diagrama MER (Modelo Entidade-Relacionamento) é uma representação gráfica que ilustra as entidades de um sistema e os relacionamentos entre elas. Ele é amplamente utilizado na engenharia de software e no design de bancos de dados para descrever a estrutura de dados de forma conceitual, facilitando a compreensão das informações que precisam ser armazenadas.</p><br>
+              <div>
+                <img src="css/" alt="" width="400px">
+                  <h2>Diagrama MER</h2>
+              </div>
+            </ul>
+            <ul>
+            </div>
+              <br>
+              <br>
+              <br>
+              <div class="pag">
+              <h3>O que é dicionário de Dados?</h3><br>
+              <p>Um dicionário de dados é uma ferramenta ou um documento que define os elementos de dados em um sistema de informação, como bancos de dados ou aplicações. Ele geralmente contém informações detalhadas sobre cada elemento de dados, incluindo:</p><br>
+            </div>
+            <div class="pag">
+              <li><span>Nome do Dado:</span>  Identificação do elemento.</li><br>
+              <li><span>Tipo de Dado:</span> Natureza do dado (por exemplo, texto, número, data).</li><br>
+              <li><span>Tamanho:</span> A capacidade máxima do dado, se aplicável.</li><br>
+              <li><span>Descrição:</span> Explicação do que o dado representa e seu propósito.</li><br>
+              <li><span>Restrições:</span> Regras que limitam os valores que o dado pode assumir (por exemplo, se é obrigatório, exclusivo, etc.).</li><br>
+              <li><span>Formato: </span>Como o dado deve ser estruturado ou apresentado.</li><br>
+              <li><span>Relacionamentos:</span> Como o dado se relaciona com outros dados no sistema.</li><br>
+            </ul>
+
+          </div>
+
+      </div>
           </section>
    
     <section>
@@ -125,29 +209,33 @@
             </form>  
         </section>  
     </div>  
-<section class="line-footer">  
-  <div class="box-line-footer1">  
-      <img src="images/logotipo.png" alt="Logotipo Inteligia Code">  
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quos praesentium possimus.</p>  
-  </div>  
-
-  <section class="line-footer">  
-    <div class="box-line-footer">  
-<img src="css/chico.png" alt="logo da empresa">
-<p>sei la sei la sei la</p>
-</div>
-</section>
+    <section class="line-footer">  
+      <div class="box-line-footer1">  
+        <div style="display: flex; align-items: center;">  
+          <img src="css/I.png" alt="Lisboa Tech" style="margin-right: 10px;" width="200px">  
+          <p>Somos a Lisboa Tech -- Codificando soluções, transformando o amanhã!</p>
+        </div>    
+      </div>  
+      <style>
+        h2{
+          text-align: center;
+          align-items: center;
+        }
+      </style>
+      <section class="line-footer">  
+        <div class="box-line-footer">  
+    </div>
+    </section>
 <section>
   <div class="box-line-footer">  
       <h3>Links úteis</h3>  
       <div class="links-footer">  
-          <a href="mim.html">Sobre mim</a>  
+        <a href="mim.html">De onde vem o Lisboa?</a>  
       </div>  
   </div>  
 
   <div class="box-line-footer">
-    <h3>Siga-me!</h3>
-    <p>Os links estão no inicio da página!</p>
+    <h3>Siga-me, nas redes sociais!!</h3>
   </div>
 </section>
 </footer>  
