@@ -349,3 +349,78 @@ button:hover {
       font-size: 14px; /* Reduzir tamanho da fonte do rodapé */
   }
 }
+
+
+
+
+/* Media query para dispositivos móveis (até 768px) */
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: flex-start; /* Alinha itens à esquerda */
+  }
+
+  .menu-lateral {
+      display: block; /* Exibir menu lateral em telas menores */
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 100%; /* Largura total */
+  }
+
+  .sociais {
+      margin-top: 10px; /* Margem entre os botões sociais */
+  }
+
+  .pag {
+      margin: 10px 0; /* Reduzir margens em telas menores */
+  }
+
+  footer {
+      padding: 15px; /* Reduzir padding do rodapé */
+  }
+
+  .card {
+      width: calc(100% - 20px); /* Largura total para cartões */
+  }
+}
+
+/* Media query para dispositivos muito pequenos (até 480px) */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 24px; /* Reduzir tamanho da fonte do título */
+  }
+
+  .pag {
+      padding: 10px; /* Reduzir padding das seções */
+  }
+
+  footer {
+      font-size: 14px; /* Reduzir tamanho da fonte do rodapé */
+  }
+
+  .line-footer1 form input[type=email] {
+      width: 100%; /* Faz o input ocupar toda a largura */
+  }
+
+  .line-footer1 form input[type=submit] {
+      width: 100%; /* Faz o botão ocupar toda a largura */
+      margin-top: 10px; /* Adiciona espaço acima do botão */
+  }
+
+  .container, .container2, .container3 {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .card {
+      width: 90%; /* Largura dos cartões em telas pequenas */
+  }
+}
+
+/* Media query para tablets (entre 481px e 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+      width: calc(45% - 20px); /* Largura dos cartões em tablets */
+  }
+}
