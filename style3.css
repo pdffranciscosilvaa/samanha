@@ -314,14 +314,13 @@ button:hover {
       flex-direction: column; /* Muda para coluna em telas menores */
       align-items: flex-start; /* Alinha itens à esquerda */
   }
+}
 
-  .menu-lateral {
-      display: block; /* Exibir menu lateral em telas menores */
-      padding: 10px;
-      background: #fff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      width: 100%; /* Largura total */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 24px; /* Reduzir tamanho da fonte do título */
   }
+}
 
   .sociais {
       margin-top: 10px; /* Margem entre os botões sociais */
