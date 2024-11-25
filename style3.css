@@ -313,12 +313,47 @@ button:hover {
   .menu {
       flex-direction: column; /* Muda para coluna em telas menores */
       align-items: flex-start; /* Alinha itens à esquerda */
+      padding: 10px; /* Adiciona um pouco de espaçamento */
+  }
+
+  .menu a {
+      padding: 10px; /* Aumenta o espaçamento dos links do menu */
+      width: 100%; /* Faz os links ocuparem toda a largura */
+      text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  .container {
+      padding: 10px; /* Reduz o espaçamento interno em telas menores */
+  }
+
+  .card {
+      width: 100%; /* Faz os cards ocuparem toda a largura */
+      margin: 10px 0; /* Adiciona margem vertical */
   }
 }
 
+/* Media query para telas menores que 480px */
 @media (max-width: 480px) {
   header h1 {
       font-size: 24px; /* Reduzir tamanho da fonte do título */
+  }
+
+  .menu {
+      padding: 5px; /* Reduz o padding do menu */
+  }
+
+  .menu a {
+      font-size: 14px; /* Reduz o tamanho da fonte dos links do menu */
+  }
+
+  .pag {
+      padding: 10px; /* Reduzir padding das seções */
+      margin: 5px 0; /* Margens menores */
+  }
+
+  footer {
+      font-size: 14px; /* Reduzir tamanho da fonte do rodapé */
+      padding: 10px; /* Reduzir padding do rodapé */
   }
 }
 
